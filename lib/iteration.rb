@@ -11,6 +11,7 @@ def join_ingredients(src)
   new_array = []
   row_index = 0 
   while row_index < src.count do 
+    binding.pry
     inner_array = src[row_index]
     new_array << "I love #{inner_array[0]} and #{inner_array[1]} on my pizza"
     row_index +=1 
@@ -45,6 +46,7 @@ def total_even_pairs(src)
 total = 0 
 row_index = 0 
 while row_index < src.count do 
+  
   inner_array = src[row_index]
   if (inner_array[0] % 2 == 0) && (inner_array[1] % 2 == 0)
     total += (inner_array[0] + inner_array[1])
